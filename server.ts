@@ -46,7 +46,7 @@ async function startServer() {
       - translations: Translate the poem's title, content, guide (explaining the poem's context and message to a multicultural parent), and homeworkGuide (suggesting a cute warm parent-child interactive activity related to the topic at home) into English (en), Vietnamese (vi), Chinese (zh), and Japanese (ja). Use the language code (en, vi, zh, ja) for the keys.`;
 
       const response = await ai.models.generateContent({
-        model: "gemini-3.5-flash",
+        model: "gemini-3.1-pro-preview",
         contents: prompt,
         config: {
           systemInstruction: "You are an expert Korean educational AI Poet and Curriculum Specialist. Your goal is to write highly emotional, warm, and beautiful educational poems in Korean (exactly 4 lines long) for elementary school students (including multicultural and slow learning children) based on a topic, and then generate highly structured comprehension activities, translation guides, and exercises matching a strict JSON schema.",
